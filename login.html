@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>login</title>
+  </head>
+
+  <body>
+    <nav>
+      <h2>Raahi</h2>
+      <div id="links">
+        <h5><a href="./index.html">Home</a></h5>
+        <h5><a href="./login.html">Login</a></h5>
+        <h5><a href="./signup.html">Sign Up</a></h5>
+        <h5><a href="./contactus.html">Contact</a></h5>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row content">
+        <div class="col-md-6 mb-3">
+          <img src="./img/food.jpg" class="img-fluid" />
+        </div>
+        <div class="col-md-6">
+          <h3 class="signin-text mb-3">Sign In</h3>
+          <form id="form">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email Here"
+                id="email"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password"> Password</label>
+              <input
+                type="password"
+                name="password"
+                placeholder="Password Here"
+                id="password"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                name="checkbox"
+                class="form-check-input"
+                id="checkbox"
+              />
+              <label class="form-check-label" for="checkbox">
+                Remember Me</label
+              >
+            </div>
+            <button type="submit" onclick="login()" class="btn btn-class">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/local2.js"></script>
+
+
+    <!--Prevent Website from copying content-->
+    <script type="text/javascript">
+      $(document).ready(function(){
+         $('body').bind('cut copy paste',function(e){
+             e.preventDefault();
+         })
+         $("body").on("contextmenu",function(e){
+           return false;
+         })
+      })
+  
+      </script>
+  </body>
+</html>

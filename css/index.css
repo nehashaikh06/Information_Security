@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+  padding: auto;
+  background-image: url(../img/food-truck-in-the-street.jpg);
+  background-repeat: no-repeat;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#links {
+  display: flex;
+  margin-left: 800px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: small;
+}
+a {
+  display: flex;
+  flex-direction: row;
+  line-height: 10px;
+  text-decoration: none;
+  padding: 5px;
+  margin: 10px;
+}
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: whitesmoke;
+  opacity: 0.8;
+  margin: 40px;
+}
+#sign {
+  display: flex;
+  justify-content: center;
+}
+#login,
+#signin {
+  background-color: turquoise;
+  font-size: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 25px;
+}
+
+#launch {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#timer {
+  background-color: turquoise;
+  font-size: 30px;
+  padding: 50px;
+  margin-top: 0;
+}
+#heading {
+  font-size: 50px;
+  background-color: whitesmoke;
+  opacity: 0.8;
+  padding: 20px;
+}
+.footer {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.footext {
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 1300px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+  #links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 5px;
+    font-size: 10px;
+  }
+  #login,
+  #signin {
+    font-size: 18px;
+    padding: 8px;
+  }
+  #launch {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #timer {
+    background-color: turquoise;
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 0;
+  }
+  .footer {
+    background-color: white;
+    position: fixed;
+    font-size: 5px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  #heading {
+    font-size: 10px;
+  }
+}

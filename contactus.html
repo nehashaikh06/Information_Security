@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>Approach Us</title>
+  </head>
+  <body>
+    <nav>
+      <h2>Raahi</h2>
+      <div id="links">
+        <h2><a href="./index.html">Home</a></h2>
+        <h2><a href="./login.html">Login</a></h2>
+        <h2><a href="./signup.html">Sign Up</a></h2>
+        <h2><a href="./contactus.html">Contact</a></h2>
+      </div>
+    </nav>
+    <div class="contact-section">
+      <h1>Aproach Us</h1>
+      <div class="border"></div>
+      <form class="contact-form" action="home.html" method="post">
+        <input type="text" class="contact-form-text" placeholder="Your Name" />
+        <input
+          type="email"
+          class="contact-form-text"
+          placeholder="Your Email"
+        />
+        <input
+          type="text"
+          class="contact-form-text"
+          placeholder="Phone Number"
+        />
+        <textarea
+          class="contact-form-text"
+          placeholder="Write your message"
+        ></textarea>
+        <input type="submit" class="contact-form-btn" value="Send" />
+      </form>
+    </div>
+
+    <!--Prevent Website from copying content-->
+    <script type="text/javascript">
+      $(document).ready(function(){
+         $('body').bind('cut copy paste',function(e){
+             e.preventDefault();
+         })
+         $("body").on("contextmenu",function(e){
+           return false;
+         })
+      })
+  
+      </script>
+  </body>
+</html>

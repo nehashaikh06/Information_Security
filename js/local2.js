@@ -1,0 +1,1 @@
+function login(){var e=document.getElementById("email").value,t=document.getElementById("password").value,a=localStorage.getItem("email1"),l=localStorage.getItem("password1");if(e==a&&t==l)return window.open("index.html"),!1;alert("Email and Password is Incorrect!")}
